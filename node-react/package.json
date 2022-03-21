@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "back": "cd back && nodemon server",
+    "front": "cd front && yarn start",
+    "start": "concurrently --kill-others-on-fail \"yarn back\" \"yarn front\""
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "concurrently": "^7.0.0",
+    "express": "^4.17.3",
+    "http-proxy-middleware": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
